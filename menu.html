@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu – Aly's Gelato Garden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">Aly's Gelato Garden</h1>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+        <a href="cart.html">Keranjang</a>
+    </nav>
+</header>
+
+<section class="menu-section">
+    <h2>🍨 Menu Gelato Kami</h2>
+    <p>Pilih rasa favoritmu, princess! 💖✨</p>
+
+    <div class="menu-grid">
+
+        <!-- ====================== RASA BUAH FRESH ====================== -->
+        <div class="category-title">🌈 Fresh & Colorful</div>
+
+        <div class="menu-item">
+            <img src="images/mango_sunset.jpg" alt="Mango Sunset">
+            <h3>Mango Sunset</h3>
+            <p class="price">Rp 18.000</p>
+            <button onclick="addToCart('Mango Sunset', 18000)">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/blueberry_dream.jpg" alt="Blueberry Dream">
+            <h3>Blueberry Dream</h3>
+            <p class="price">Rp 18.000</p>
+            <button onclick="addToCart('Blueberry Dream', 18000)">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/peach_paradise.jpg" alt="Peach Paradise">
+            <h3>Peach Paradise</h3>
+            <p class="price">Rp 18.000</p>
+            <button onclick="addToCart('Peach Paradise', 18000)">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/lychee_frost.jpg" alt="Lychee Frost">
+            <h3>Lychee Frost</h3>
+            <p class="price">Rp 18.000</p>
+            <button onclick="addToCart('Lychee Frost', 18000)">Tambah ke Keranjang</button>
+        </div>
+
+        <!-- ====================== RASA SIGNATURE CREAMY ====================== -->
+        <div class="category-title">🍧 Signature Creamy</div>
+
+        <div class="menu-item">
+            <img src="images/vanilla_queen.jpg" alt="Vanilla Queen">
+            <h3>Vanilla Queen</h3>
+            <p class="price">Rp 20.000</p>
+            <button onclick="addToCart('Vanilla Queen', 20000)">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/choco_royal.jpg" alt="Chocolate Royal">
+            <h3>Chocolate Royal</h3>
+            <p class="price">Rp 20.000</p>
+            <button onclick="addToCart('Chocolate Royal', 20000)">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/strawberry_princess.jpg" alt="Strawberry Princess">
+            <h3>Strawberry Princess</h3>
+            <p class="price">Rp 20.000</p>
+            <button onclick="addToCart('Strawberry Princess', 20000)">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/matcha_glow.jpg" alt="Matcha Glow">
+            <h3>Matcha Glow</h3>
+            <p class="price">Rp 22.000</p>
+            <button onclick="addToCart('Matcha Glow', 22000)">Tambah ke Keranjang</button>
+        </div>
+
+        <!-- ====================== RASA PREMIUM ====================== -->
+        <div class="category-title">💎 Premium Collection</div>
+
+        <div class="menu-item">
+            <img src="images/pistachio_elite.jpg" alt="Pistachio Elite">
+            <h3>Pistachio Elite</h3>
+            <p class="price">Rp 28.000</p>
+            <button onclick="addToCart('Pistachio Elite', 28000)">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/hazelnut_gold.jpg" alt="Hazelnut Gold">
+            <h3>Hazelnut Gold</h3>
+            <p class="price">Rp 28.000</p>
+            <button onclick="addToCart('Hazelnut Gold', 28000)">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/caramel_swirl.jpg" alt="Caramel Swirl">
+            <h3>Caramel Swirl</h3>
+            <p class="price">Rp 25.000</p>
+            <button onclick="addToCart('Caramel Swirl', 25000)">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/redvelvet_charm.jpg" alt="Red Velvet Charm">
+            <h3>Red Velvet Charm</h3>
+            <p class="price">Rp 25.000</p>
+            <button onclick="addToCart('Red Velvet Charm', 25000)">Tambah ke Keranjang</button>
+        </div>
+
+        <!-- ====================== TOPPING ====================== -->
+        <div class="category-title">🍭 Topping Manis</div>
+
+        <div class="menu-item">
+            <img src="images/topping_choco.jpg" alt="Chocolate Chips">
+            <h3>Chocolate Chips</h3>
+            <p class="price">Rp 5.000</p>
+            <button onclick="addToCart('Chocolate Chips', 5000)">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/topping_rainbow.jpg" alt="Rainbow Sprinkles">
+            <h3>Rainbow Sprinkles</h3>
+            <p class="price">Rp 5.000</p>
+            <button onclick="addToCart('Rainbow Sprinkles', 5000)">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/topping_oreo.jpg" alt="Oreo Crumble">
+            <h3>Oreo Crumble</h3>
+            <p class="price">Rp 6.000</p>
+            <button onclick="addToCart('Oreo Crumble', 6000)">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/topping_marshmallow.jpg" alt="Marshmallow Fluff">
+            <h3>Marshmallow Fluff</h3>
+            <p class="price">Rp 6.000</p>
+            <button onclick="addToCart('Marshmallow Fluff', 6000)">Tambah ke Keranjang</button>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    // =================== SISTEM KERANJANG ===================
+    function addToCart(name, price) {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        let existing = cart.find(item => item.name === name);
+
+        if (existing) {
+            existing.qty++;
+        } else {
+            cart.push({ name, price, qty: 1 });
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert(name + " ditambahkan ke keranjang 💖");
+    }
+</script>
+
+</body>
+</html>

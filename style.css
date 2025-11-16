@@ -1,0 +1,255 @@
+/* ---- GENERAL ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #ffe6f2;
+  color: #444;
+}
+
+.center {
+  text-align: center;
+}
+
+/* ---- NAVBAR ---- */
+.navbar {
+  width: 100%;
+  background: #ff9acb;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 10px rgba(255, 100, 161, 0.4);
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .logo img {
+  width: 55px;
+  filter: drop-shadow(0 0 5px white);
+  animation: floating 3s infinite ease-in-out;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav .active {
+  color: #ffe6f2;
+  text-shadow: 0 0 10px white;
+}
+
+/* ---- HERO ---- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 50px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+  color: #ff5fa2;
+  text-shadow: 0 0 10px #ffc1dd;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.hero-img img {
+  width: 330px;
+  animation: floating 3s infinite ease-in-out;
+}
+
+/* BUTTON */
+.btn-pink {
+  padding: 12px 25px;
+  background: #ff74b8;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(255, 100, 160, 0.4);
+}
+
+.btn-pink:hover {
+  background: #ff509f;
+  box-shadow: 0 0 15px #ff8ecf;
+}
+
+/* ---- FEATURES ---- */
+.features {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.feature-box {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.feature-item {
+  padding: 12px;
+  background: #ffc1dd;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 0 3px 8px rgba(255, 100, 161, 0.4);
+}
+
+/* ---- MENU PAGE ---- */
+.menu-page {
+  padding: 40px;
+}
+
+.menu-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 22px;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(255, 140, 180, 0.35);
+  transition: 0.3s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 140, 180, 0.6);
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.menu-item h3 {
+  margin: 10px 0;
+  color: #ff5fa2;
+}
+
+.price {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.add-cart {
+  padding: 7px 18px;
+  background: #ff74b8;
+  border: none;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-cart:hover {
+  background: #ff4d9b;
+  box-shadow: 0 0 10px #ffa8d8;
+}
+
+/* ---- ABOUT PAGE ---- */
+.about-page {
+  padding: 50px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-img img {
+  width: 300px;
+  border-radius: 20px;
+  animation: floating 3s infinite ease-in-out;
+}
+
+.about-text h1 {
+  color: #ff5fa2;
+  font-size: 35px;
+}
+
+.about-text ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* ---- CONTACT PAGE ---- */
+.contact-container {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact-img img {
+  width: 300px;
+  animation: floating 3s infinite ease-in-out;
+}
+
+.btn-wa {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #25D366;
+  color: #fff;
+  margin: 12px 0;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-wa:hover {
+  background: #1ebe58;
+  box-shadow: 0 0 10px #8cffb5;
+}
+
+/* ---- FOOTER ---- */
+footer {
+  background: #ff9acb;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 -3px 10px rgba(255, 100, 161, 0.3);
+}
